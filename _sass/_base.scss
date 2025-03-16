@@ -19,6 +19,10 @@ strong {
   color: var(--global-text-color);
 }
 
+body {
+  font-size: 1.1rem;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -26,7 +30,7 @@ hr {
 table {
   td,
   th {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 1px 1rem 1px 0;
   }
 
@@ -401,7 +405,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
 
     a {
       img {
@@ -516,12 +520,25 @@ footer.sticky-bottom {
     .list-group-item {
       background-color: inherit;
       border-color: var(--global-divider-color);
-
-      .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
-      }
     }
+  }
+
+  .badge {
+    color: var(--global-card-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
+  }
+  .company-highlight {
+    color: #b615c2;
+    font-weight: bold;
+  }
+  .logo-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover; 
+    object-position: center;
+  }
+  .fa-5x {
+    color: #b615c2;
   }
 }
 
@@ -730,6 +747,11 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        width: 100%;
+        min-width: 120px;
+        max-width: 500px;
+        height: 100px;
+        overflow: hidden;
       }
 
       .abbr {

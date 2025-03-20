@@ -4,16 +4,13 @@
   {% for content in work %}
     <li class="list-group-item work-entry" id="work-{{ content.name | slugify }}">
       <div class="row align-items-center">
-        
         <!-- LEFT COLUMN: date/location and job details in multiple rows -->
         <div class="col-sm-10">
           <!-- Row 1: Date & Location -->
           <div>
             {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
             {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            <span class="badge font-weight-bold text-uppercase align-middle">
-              {{ startDate }} - {{ endDate }}
-            </span>
+            <span class="badge font-weight-bold text-uppercase align-middle"> {{ startDate }} - {{ endDate }} </span>
             {% if content.location %}
               <span class="ml-3 location">
                 <i class="fa-solid fa-location-dot"></i>
@@ -24,7 +21,9 @@
           <!-- Row 2: Position + Company Name -->
           <div class="mt-2" style="font-size: 1.2rem;">
             <span class="company-highlight">{{ content.name }}</span>
-            <span> - <strong>{{ content.position }}</strong></span>
+            <span>
+              - <strong>{{ content.position }}</strong></span
+            >
           </div>
           <!-- Row 3: Summary/Description -->
           {% if content.summary %}
@@ -32,26 +31,28 @@
               {{ content.summary }}
             </div>
           {% endif %}
-          
+
           <!-- Row 4: Highlights -->
           {% if content.highlights %}
             <ul class="items mt-1">
               {% for item in content.highlights %}
-                <li><span class="item">{{ item }}</span></li>
+                <li>
+                  <span class="item">{{ item }}</span>
+                </li>
               {% endfor %}
             </ul>
           {% endif %}
         </div>
-        
+
         <!-- RIGHT COLUMN -->
         <div class="col-sm-2 text-right">
           {% if content.icon %}
             {% if content.icon contains '.png' or content.icon contains '.jpg' or content.icon contains '.jpeg' or content.icon contains '.svg' %}
-              <img 
-                class="logo-img" 
-                src="{{ content.icon | prepend: 'assets/img/' | relative_url }}" 
+              <img
+                class="logo-img"
+                src="{{ content.icon | prepend: 'assets/img/' | relative_url }}"
                 alt="Logo for {{ content.name }}"
-              />
+              >
             {% else %}
               <!-- Font Awesome icon -->
               <i class="{{ content.icon }}"></i>

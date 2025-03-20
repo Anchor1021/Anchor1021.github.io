@@ -6,12 +6,15 @@ layout: default
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span>
-        {{ site.middle_name }} {{ site.last_name }}
+        {{ site.middle_name }}
+        {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc"><strong>{{ page.subtitle }}</strong></p>
+    <p class="desc">
+      <strong>{{ page.subtitle }}</strong>
+    </p>
   </header>
 
   <article>
@@ -26,7 +29,8 @@ layout: default
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px,
 (min-width: 576px) 30vw, 95vw"{% endcapture %}
-          {% include figure.liquid
+          {%
+            include figure.liquid
             loading="eager"
             path=profile_image_path
             class=profile_image_class
@@ -64,12 +68,12 @@ layout: default
         {% if section_key == 'meta' or section_value.size == 0 %}
           {% continue %}
         {% endif %}
-        
+
         {% if section_key == 'education' %}
           <h2>Education</h2>
           {% include resume/education.liquid data=section_value %}
         {% endif %}
-        
+
         {% if section_key == 'work' %}
           <h2>Experience</h2>
           {% include resume/work.liquid data=section_value %}
@@ -80,9 +84,7 @@ layout: default
     <!-- Selected Publications -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">
-          Selected Publications
-        </a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"> Selected Publications </a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

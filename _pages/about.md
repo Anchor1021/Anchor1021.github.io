@@ -28,4 +28,4 @@ latest_posts:
 
 My research focuses on `robotic learning`, particularly in `reinforcement learning`, `imitation learning`, `world models`, and `foundation models`. I am always open to discussions adn collaborations on these topics - feel free to drop me an email if you are interested!
 
-I interned at _Meta_ (2022) and _TikTok_ (2024) and will be joining _Amazon_ as an Applied Scientist Intern in 2025.
+I interned at _Meta_ (2022), _TikTok_ (2024), and _Amazon_ (2025).

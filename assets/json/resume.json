@@ -30,6 +30,16 @@
 
   "work": [
     {
+      "name": "Amazon",
+      "position": "Applied Scientist Intern",
+      "url": "",
+      "icon": "amazon.svg",
+      "location": "Seattle, WA",
+      "startDate": "2025-06-01",
+      "endDate": "2025-09-01",
+      "summary": "LLMs and reinforcement learning fine-tuning."
+    },
+    {
       "name": "TikTok",
       "position": "Machine Learning Engineering Intern",
       "url": "",

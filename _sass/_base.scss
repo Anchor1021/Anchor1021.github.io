@@ -532,9 +532,9 @@ footer.sticky-bottom {
     font-weight: bold;
   }
   .logo-img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: contain;
     object-position: center;
   }
   .fa-5x {

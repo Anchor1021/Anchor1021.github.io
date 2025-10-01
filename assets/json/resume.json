@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "Dechen Gao",
-    "label": "CS PhD Candidate",
+    "name": "Boqi Zhao",
+    "label": "CS PhD Student",
     "image": "",
-    "email": "dechengao@gmail.com",
-    "GitHub": "https://github.com/gaodechen",
-    "LinkedIn": "https://www.linkedin.com/in/gao-dechen",
+    "email": "boqizhao121@gmail.com",
+    "GitHub": "https://github.com/Anchor1021",
+    "LinkedIn":  "https://www.linkedin.com/in/boqi-zhao-1021/",
     "summary": "",
     "location": {
       "address": "1 Shields Ave",
@@ -17,48 +17,17 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "gaodechen",
-        "url": "https://github.com/gaodechen"
+        "username": "boqi-zhao",
+        "url": "https://github.com/Anchor1021"
       },
       {
         "network": "LinkedIn",
-        "username": "gao-dechen",
-        "url": "https://www.linkedin.com/in/gao-dechen/"
+        "username": "boqi-zhao",
+        "url": "https://www.linkedin.com/in/boqi-zhao-1021/"
       }
     ]
   },
 
-  "work": [
-    {
-      "name": "Amazon",
-      "position": "Applied Scientist Intern",
-      "url": "",
-      "icon": "amazon.svg",
-      "location": "Seattle, WA",
-      "startDate": "2025-06-01",
-      "endDate": "2025-09-01",
-      "summary": "LLMs and reinforcement learning fine-tuning."
-    },
-    {
-      "name": "TikTok",
-      "position": "Machine Learning Engineering Intern",
-      "url": "",
-      "icon": "tiktok.svg",
-      "location": "San Jose, CA",
-      "startDate": "2024-06-01",
-      "endDate": "2024-09-01",
-      "summary": "Multi-modal understanding and LLMs."
-    },
-    {
-      "name": "Meta",
-      "position": "Software Engineering Intern",
-      "url": "",
-      "icon": "instagram.svg",
-      "location": "Menlo Park, CA",
-      "startDate": "2022-06-01",
-      "endDate": "2022-09-01"
-    }
-  ],
 
   "education": [
     {
@@ -66,10 +35,10 @@
       "location": "Davis, California, US",
       "url": "https://www.cs.ucdavis.edu/",
       "studyType": "Ph.D. in Computer Science",
-      "startDate": "2023-03-01",
+      "startDate": "2025-05-01",
       "endDate": "",
       "score": "3.9/4.0",
-      "courses": ["Foundation models", "World models", "Reinforcement learning", "Robotics"],
+      "courses": [],
       "icon": "ucd.png"
     },
     {
@@ -77,17 +46,18 @@
       "location": "Davis, California, US",
       "url": "https://www.cs.ucdavis.edu/",
       "studyType": "Master of Computer Science",
-      "startDate": "2021-09-01",
-      "endDate": "2023-06-01",
+      "startDate": "2023-09",
+      "endDate": "2025-06",
       "icon": "ucd.png"
     },
     {
-      "institution": "Shandong University",
-      "location": "Shandong, China",
+      "institution": "University of Wisconsin, Madison",
+      "location": "Madison, Wisconsin, US",
+      "url": "https://www.cs.wisc.edu/",
       "studyType": "Bachelor of Computer Science",
-      "startDate": "2017-09-01",
-      "endDate": "2021-06-01",
-      "icon": "sdu.png"
+      "startDate": "2020-09-01",
+      "endDate": "2023-05-01",
+      "icon": "uwm.png"
     }
   ],
 

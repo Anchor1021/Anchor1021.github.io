@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https:/Anchor1021.github.io/sitemap.xml

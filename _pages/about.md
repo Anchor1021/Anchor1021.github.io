@@ -6,7 +6,7 @@ subtitle: 🎓 CS PhD Student | 🏫 UC Davis | 📨 boqizhao121 at gmail dot co
 
 profile:
   align: right
-  image: /assets/img/avatar.jpg
+  image: avatar.jpg
   image_circular: true # crops the image to make it circular
   more_info:
 

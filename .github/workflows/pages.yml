@@ -20,15 +20,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+
+      # Set up Ruby and use your Gemfile so custom plugins (e.g., jekyll-toc) are installed
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
           bundler-cache: true
+
+      # Install gems and build the site with your plugin set
       - run: bundle install --jobs 4
-      - uses: actions/jekyll-build-pages@v1
-        with:
-          source: .
-          destination: ./_site
+      - run: bundle exec jekyll build --trace --verbose -s . -d ./_site
+
+      # Upload the generated site to the Pages artifact
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
